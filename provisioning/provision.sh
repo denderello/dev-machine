@@ -27,8 +27,10 @@ sudo apt-get install -y \
      golang-go \
      gccgo \
      linux-image-extra-$(uname -r) \
-     docker-engine=1.9.1-0~wily
+     language-pack-en \
+     docker-engine=1.11.0-0~wily
 
+sudo groupadd docker
 sudo usermod -aG docker vagrant
 sudo locale-gen UTF-8
 
