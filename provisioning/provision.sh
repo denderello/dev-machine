@@ -34,6 +34,7 @@ sudo groupadd docker
 sudo usermod -aG docker vagrant
 
 sudo mkdir -p /home/vagrant/bin
+sudo chown vagrant:vagrant /home/vagrant/bin
 
 sudo mkdir -p /opt/dev-machine/projects/golang/{src,bin,pkg}
 
