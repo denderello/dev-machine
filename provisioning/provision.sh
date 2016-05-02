@@ -32,7 +32,6 @@ sudo apt-get install -y \
 
 sudo groupadd docker
 sudo usermod -aG docker vagrant
-sudo locale-gen UTF-8
 
 sudo mkdir -p /home/vagrant/bin
 
