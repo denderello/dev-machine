@@ -6,9 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
   
   config.vm.network :private_network, ip: "172.17.8.3"
-
-  config.vm.synced_folder ".", "/opt/dev-machine"
-  #config.vm.synced_folder ".", "/opt/dev-machine", type: "nfs"
+  config.vm.synced_folder ".", "/opt/dev-machine", type: "nfs"
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
